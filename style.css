@@ -38,6 +38,10 @@ button{
     border: none;
     border-radius: 0.5rem;
 }
+#output{
+margin-top: 1rem;
+font-size: larger;
+}
 footer a{
     font-size: large;
     margin: 0.5rem;
