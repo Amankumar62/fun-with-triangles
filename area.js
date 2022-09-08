@@ -5,6 +5,10 @@ const areaBtn = document.querySelector("#area-btn");
 
 
 function calculateArea(){
+    if(base.value.length === 0 || height.value.length === 0){
+        outputEl.innerText = "Please provide the dimensions!!";
+        return;
+    }
     const area = 0.5*(base.value*height.value);
     outputEl.innerText = "The area of the triangle is "+area;
 }

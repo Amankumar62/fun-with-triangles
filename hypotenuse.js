@@ -9,6 +9,10 @@ function calculateSumOfSquares(a,b){
 }
 
 function calculateHypotenuse(){
+    if(sides[0].value.length === 0 || sides[1].value.length === 0){
+        outputEl.innerText = "Please provide input before pressing calculate 😑!!";
+        return;
+    }
 const sumOfSquares = calculateSumOfSquares(Number(sides[0].value),Number(sides[1].value));
 const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
 
