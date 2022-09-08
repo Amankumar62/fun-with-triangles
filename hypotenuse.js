@@ -13,6 +13,10 @@ function calculateHypotenuse(){
         outputEl.innerText = "Please provide input before pressing calculate 😑!!";
         return;
     }
+    if(Number(sides[0].value)< 0 || Number(sides[1].value) < 0){
+        outputEl.innerText = "Please provide positive values";
+        return;
+    }
 const sumOfSquares = calculateSumOfSquares(Number(sides[0].value),Number(sides[1].value));
 const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
 

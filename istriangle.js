@@ -12,6 +12,10 @@ function isTriangle(){
         outputEl.innerText = "Please provide all the angles.";
         return;
     }
+    if(Number(inputs[0].value)< 0 || Number(inputs[1].value) < 0 || Number(inputs[2].value)< 0){
+        outputEl.innerText = "Please provide positive values";
+        return;
+    }
     console.log(inputs[0].value.length);
     const sumOfAngles = calculateSumOfAngle(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value));
     if(sumOfAngles === 180){

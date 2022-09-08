@@ -9,6 +9,10 @@ function calculateArea(){
         outputEl.innerText = "Please provide the dimensions!!";
         return;
     }
+    if(Number(base.value)< 0 || Number(height.value) < 0){
+        outputEl.innerText = "Please provide positive values";
+        return;
+    }
     const area = 0.5*(base.value*height.value);
     outputEl.innerText = "The area of the triangle is "+area;
 }
